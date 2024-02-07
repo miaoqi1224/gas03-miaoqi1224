@@ -19,18 +19,20 @@ bool isEven(int x) {
     return x % 2 == 0;
 }
 
-bool isPrime(int x) {
-    if (x < 2) {
-        return false;
-    }
-    for (int i = 2; i * i <= x; i++) {
-        if (x % i == 0) {
-            return false;
-        }
-    }
+bool isPrime(int x){
+    // Corner case
+  if (x <= 1)
+    return false;
+ 
+    // Check from 2 to n-1
+  for (int i = 2; i <= x / 2; i++)
+    if (x % i == 0)
+      return false;
+ 
     return true;
 }
-//
+ 
+
 //bool isOdd(int x) { 
 //  return false;  // REPLACE THIS STUB WITH REAL CODE
 //}
