@@ -5,5 +5,5 @@ int sumOfArray(int a[], int size) {
   for (int i=0; i<size; i++) {
     sum+=a[i];
   }
-  return 0;
+  return sum;
 }

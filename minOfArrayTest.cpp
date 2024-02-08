@@ -3,16 +3,17 @@
 
 int main() {
 
-	int fiveThrees[5] = {3, 3, 3, 3, 3};
-  	assertEquals(3,
-        minOfArray(fiveThrees, 5),
-        "minOfArray(fiveThrees, 5)");
+  int fiveThrees[5]={3,3,3,3,3};
+  assertEquals(3,
+	       minOfArray(fiveThrees,5),
+	       "minOfArray(fiveThrees,5)");
   
   int zeros[3]={0,0,0}; // initializes all elements to 0
   assertEquals(0,
 	       minOfArray(zeros,3), 
 	       "minOfArray(zeros,3)" );  
 
+  
   int fiveInts[5]={12,3,4,-9,5}; 
   assertEquals(-9,
 	       minOfArray(fiveInts,5), 
