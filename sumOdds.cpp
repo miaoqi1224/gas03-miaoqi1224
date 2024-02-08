@@ -12,4 +12,5 @@ int sumOdds(int a[], int size) {
       sum += a[i];
     }
   }
+  return sum;
 }
